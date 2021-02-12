@@ -127,11 +127,9 @@ class puzzle15(QWidget):
 
         if (empty[0] == x):
             if (empty[1] - y == 60 or empty[1] + 60 == y):
-                print('x: ', x, 'y: ', y, 'empty: ', empty, 'btn: ', btn)
                 self.move_btn(btn, x, y)
         elif (empty[1] == y):
             if (empty[0] - x == 60 or empty[0] + 60 == x):
-                print('x: ', x, 'y: ', y, 'empty: ', empty, 'btn: ', btn)
                 self.move_btn(btn, x, y)
 
     def move_btn(self, btn, x, y):
